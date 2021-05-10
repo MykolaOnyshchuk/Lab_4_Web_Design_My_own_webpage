@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Given example</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/BeerSlider.css">
+</head>
+<body>
+<div class="header">
+    <img src="../img/logo.png" id="logo">
+    <div id="slogan">Best carsharing service ever!</div>
+    <div id="menu">
+        <div class="menuComponentWrap">
+            <a class="menuComponent">About us</a>
+        </div>
+        <div class="menuComponentWrap">
+            <a class="menuComponent">How to use</a>
+        </div>
+        <div class="menuComponentWrap">
+            <a class="menuComponent">Our cars</a>
+        </div>
+        <div class="menuComponentWrap">
+            <a class="menuComponent">Prices</a>
+        </div>
+    </div>
+    <div id="borderWrap">
+        <button type="button" id="downloadBut">Download our app</button>
+    </div>
+    <div id="iconsWrap">
+        <img src="../img/facebook.png" class="icon">
+        <img src="../img/instagram.png" class="icon">
+        <img src="../img/youtube.png" class="icon">
+    </div>
+</div>
+
+<div id="gallery">
+    <div id="galleryHeader">Gallery</div>
+    <div id="gallerySlogan">From econom to premium</div>
+    <div id="slider" class="beer-slider">
+        <img class="imgComp" src="../img/rio.jpg" alt="">
+        <div class="beer-reveal">
+            <img class="imgComp" src="../img/amg.jpg" alt="">
+        </div>
+    </div>
+</div>
+<script src="../js/BeerSlider.js"></script>
+<script>
+    new BeerSlider(document.getElementById('slider'));
+</script>
+</body>
+</html>

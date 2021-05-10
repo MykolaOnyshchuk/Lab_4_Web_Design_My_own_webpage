@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    height: 132px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: springgreen;
+    z-index: 1000;
+}
+
+#logo {
+    position: absolute;
+    left: 3.67%;
+    right: 77.29%;
+    top: 6.82%;
+    bottom: 22.73%;
+    cursor: pointer;
+}
+
+#slogan {
+    position: absolute;
+    left: 3.67%;
+    right: 76.52%;
+    top: 77.27%;
+    bottom: 8.33%;
+
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+#menu {
+    position: absolute;
+    left: 20.51%;
+    top: 0;
+    width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    color: red;
+}
+
+.menuComponentWrap:hover {
+    animation-name: changeColorToWhite;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeColorToWhite {
+    0% {
+        background-color: springgreen;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.menuComponentWrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25.5%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#downloadBut {
+    background-color: black;
+    position: absolute;
+    box-sizing: border-box;
+    height: 40px;
+    width: 140px;
+    top: 5.5%;
+    left: 1.7%;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+#downloadBut:hover {
+    animation-name: rotationY;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotationY {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+#borderWrap {
+    position: absolute;
+    width: 145px;
+    height: 45px;
+    display: block;
+    background: linear-gradient(to top, rgba(244, 236, 23, 1), rgba(0, 255, 255, 1));
+    left: 65.7%;
+    right: 20.68%;
+    top: 34.85%;
+    bottom: 34.85%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#iconsWrap {
+    position: absolute;
+    left: 77%;
+    top: 34.85%;
+    width: 23%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    height: 45px;
+    cursor: pointer;
+}
+
+.imgComp {
+    width: 1000px;
+    height: auto;
+}
+
+#gallery {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 3vw;
+    margin-top: 132px;
+}
+
+#galleryHeader {
+    font-size: 3vw;
+    font-family: "Segoe UI";
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#gallerySlogan {
+    font-size: 1.3vw;
+    font-family: "Segoe UI";
+    padding-bottom: 2.5%;
+}
